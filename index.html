@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>INT: Unit 4 Quiz Project</title>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <script defer src="script.js"></script>
-    </head>
-    <body>
-        <div class="title">
-            <h1>Your Quiz Title Here!</h1>
+
+<head>
+    <title>INT: Unit 4 Quiz Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <h1>How much of a Gym Nerd are you?</h1>
+    </div>
+    <div class="questions">
+        <h4>How many hours a week do you think you workout for? (Answer is in hours)</h4>
+        <img src="">
+        <label for="first-question">Hours per week</label>
+        <input type="number" name="first-question" class="question first-question" placeholder="5 hours">
+        <button value="Submit" class="submit-btn">Submit</button>
+
+        <h4>What brand of preworkout do you buy, if you do buy Preworkout (Leave Answer blank for none)</h4>
+        <div class="grid-btn">
+            <button type="button" class="prebtn btn1" value="Brand 1">Brand 1</button>
+            <button type="button" class="prebtn btn2" value="brand 2">Brand 2</button>
+            <button type="button" class="prebtn btn3" value="Brand 3">Brand 3</button>
+            <button type="button" class="prebtn btn4" value="Brand 4">Brand 4</button>
         </div>
-        <div class="questions">
-            <h4>User Question #1</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/24/16/asset/815a5287257c/anigif_sub-buzz-4360-1624553394-78_preview.gif?output-quality=auto&output-format=auto&downsize=360:*">
-            <h4>User Question #2</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-11/19/17/asset/buzzfeed-prod-web-05/anigif_sub-buzz-18467-1542667455-1.gif">
+        <!-- <img src=""> -->
+
+        <h4>How many fitness influencers do you follow? (E.g Sam Sulek and the such)</h4>
+        <label for="third-question">Amount of fitness Influencers</label>
+        <input type="number" name="third-question" class="question third-question" placeholder="3">
+        <button value="Submit" class="submit-btn">Submit</button>
+
+        <h4>What is your favorite workout?</h4>
+        <!-- This will be Buttons and then have an other that turns into an input-->
+        <div class="grid-btn">
+            <button type="button" class="workout" value="Benching">Benching</button>
+            <button type="button" class="workout" value="Curling">Curling</button>
+            <button type="button" class="workout" value="Squatting">Squatting</button>
+            <button type="button" class="workout" value="Leg Curls">Leg Curls/Leg Press</button>
+            <button type="button" class="workout" value="Pullups">Pullups</button>
         </div>
-        <div class="result">
-            This is where the user will see their quiz result.
+
+        <h4>Do you always find yourself explaining to other people certain workouts?</h4>
+        <button type="button">Yes</button>
+        <button type="button">Sometimes, but rarely</button>
+        <button type="button">No</button>
+        <button type="button">I don't talk to anyone at the gym</button>
+
+
+        <h4>Which part of the body do you focus on the most?</h4>
+        <!--do the different groups-->
+        <div class="grid-btn">
+            <button type="button" class="bodyBtn" value="Back">Back</button>
+            <button type="button" class="bodyBtn" value="Legs">Legs</button>
+            <button type="button" class="bodyBtn" value="Arms & Shoulders">Arms & Shoulders</button>
+            <button type="button" class="bodyBtn" value="Chest">Chest</button>
+            <button type="button" class="bodyBtn" value="Quads & Glutes">Quads & Glutes</button>
         </div>
-    </body>
+
+        <h4>How much do you focus on upper body instead of lower body?</h4>
+        <div class="grid-btn">
+            <button type="button" class="focusBtn" value="Almost all the time">Almost all the time.</button>
+            <button type="button" class="focusBtn" value="Most of the time">Most of the time.</button>
+            <button type="button" class="focusBtn" value="Sometimes">Sometimes</button>
+            <button type="button" class="focusBtn" value="Not a lot">Not a lot</button>
+            <button type="button" class="focusBtn" value="Barely.">Barely.</button>
+        </div>
+
+        <button type="button" class="final">Click Here to Apply all your answers and see what you get!</button>
+    </div>
+    <div class="result">
+        This is where the user will see their quiz result.
+    </div>
+</body>
+
 </html>
